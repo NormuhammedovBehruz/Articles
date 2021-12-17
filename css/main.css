@@ -148,6 +148,10 @@ body {
     display: flex;
 }
 
+.main-icons {
+    margin-top: 2px;
+}
+
 .hero-text {
     margin: 0;
     margin-left: 5px;
