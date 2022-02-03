@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Global */
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -14,10 +22,15 @@ html {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     line-height: 24px;
     font-size: 18px;
@@ -35,18 +48,31 @@ body {
 /* Main */
 
 .main-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
 }
 
 .inner-conatiner {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-}    
+}
 
 .hero {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     padding-top: 250px;
     width: 600px;
@@ -62,7 +88,7 @@ body {
 }
 
 .link {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     line-height: 28px;
     font-size: 24px;
@@ -73,8 +99,8 @@ body {
 .main-button {
     display: block;
     padding: 12px 24px;
-    background-color: #1E90FF;
-    color: #fff; 
+    background-color: #1e90ff;
+    color: #fff;
     border: transparent;
     cursor: pointer;
 }
@@ -88,14 +114,18 @@ body {
 }
 
 .inner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items:center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     line-height: 24px;
 }
 
 .main-button-text {
     margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 2px;
@@ -103,13 +133,13 @@ body {
 
 .main-button-text:before {
     display: inline-block;
-    content: '';
+    content: "";
     background-image: url(../images/vector.svg);
     width: 20px;
     height: 20px;
     margin-right: 12px;
     background-position: center;
-}   
+}
 
 .hero-icon {
     padding-right: 12px;
@@ -130,7 +160,7 @@ body {
 
 .h1 {
     margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     line-height: 28px;
     font-size: 24px;
@@ -143,31 +173,42 @@ body {
 }
 
 .hero-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .hero-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
     margin-right: 16px;
 }
 
 .hero-immg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-bottom: 23px ;
+    margin-bottom: 23px;
     margin-right: 16px;
+}
+
+.hero-item a {
+    color: #222;
+    text-decoration: none;
 }
 
 .h2 {
     width: 307px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     line-height: 21px;
     font-size: 18px;
 }
 
 .h2:hover {
-    color: #1E90FF;
+    color: #1e90ff;
 }
 
 .h2:active:active {
@@ -175,10 +216,14 @@ body {
 }
 
 .heroo-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .hero-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -194,7 +239,7 @@ body {
     margin: 0;
     margin-left: 1px;
     margin-right: 25px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     line-height: 16px;
     font-size: 14px;
@@ -202,18 +247,18 @@ body {
 
 .hero-text:before {
     display: inline-block;
-    content: '';
+    content: "";
     background-image: url(../images/icon.svg);
     width: 13px;
     height: 13px;
     background-size: cover;
     background-position: center;
     margin-right: 5px;
-}   
+}
 
 .heroo-text {
     margin: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     line-height: 16px;
     font-size: 14px;
@@ -221,19 +266,19 @@ body {
 
 .heroo-text:before {
     display: inline-block;
-    content: '';
-    background-image: url(../images/icon\ 2.svg); 
+    content: "";
+    background-image: url(../images/icon\ 2.svg);
     width: 15px;
     height: 10px;
     background-size: cover;
     background-position: center;
     margin-right: 5px;
-}   
+}
 
 .mainn-button {
     text-decoration: none;
     text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 700;
     line-height: 16px;
     font-size: 14px;
@@ -242,7 +287,7 @@ body {
 
 .buttonn-warning {
     display: block;
-    background-color: #1E90FF;
+    background-color: #1e90ff;
     padding: 12px;
     border-radius: 4px;
 }
@@ -256,11 +301,3 @@ body {
 }
 
 /* Beckground retina image */
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
